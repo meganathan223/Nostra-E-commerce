@@ -9,7 +9,8 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: auto 1rem;
     align-items: center;
     padding: 10px;
     position: sticky;
@@ -38,4 +39,69 @@ body {
 .navbar li a:hover,
 .active-nav {
     border-bottom: solid blue 4px;
+}
+
+.pages .closenav {
+    text-align: right;
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.navbar .show {
+    display: flex;
+}
+
+.offer-bar {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width:800px) {
+    .navbar .pages {
+        position: absolute;
+        flex-direction: column;
+        z-index: 10;
+        background-color: lightgray;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        text-align: center;
+        gap: 20px;
+        display: none;
+    }
+
+    .pages li {
+        margin-top: 1rem;
+    }
+
+    .navbar .show {
+        display: flex;
+    }
+}
+
+@media screen and (min-width:800px) {
+
+    .navbar .menubar,
+    .navbar .closenav {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .navbar .pages {
+        width: 65%;
+    }
 }
