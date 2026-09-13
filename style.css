@@ -123,8 +123,11 @@ body {
 }
 
 .bg-heading h1 {
-    font-size: 2.5rem;
+    font-size: 35px;
     margin-bottom: 3rem;
+    background: linear-gradient(45deg, black, transparent);
+    border-radius: 10px;
+    padding: 5px 20px;
 }
 
 .shop-now {
@@ -135,8 +138,55 @@ body {
     cursor: pointer;
 }
 
+section {
+    margin-top: 4rem;
 
+}
 
+.brands-logos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.brands img {
+    width: 30%;
+}
+
+h2 {
+    margin-left: 2rem;
+}
+
+.services-heading {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.services-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    width: 120px;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
 
 /* Media Queries */
 
