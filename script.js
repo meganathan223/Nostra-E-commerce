@@ -46,3 +46,15 @@ function prevSlide() {
 }
 
 setInterval(nextSlide, 5000);
+
+
+// wishlist heart color change
+const mostWanted = document.querySelector('#most-wanted');
+mostWanted.addEventListener('click', function (event) {
+    if (event.target.classList.contains('fa-regular')) {
+        event.target.classList.replace('fa-regular', 'fa-solid');
+    } else {
+        event.target.classList.replace('fa-solid', 'fa-regular');
+    }
+})
+
