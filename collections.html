@@ -38,7 +38,137 @@
     </nav>
 
 
-    <script src="script.js"></script>
+    <section class="search">
+        <div class="search__container">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search dress collections...">
+            </div>
+        </div>
+    </section>
+
+
+    <div class="catalog-container">
+
+        <aside class="filter-sidebar">
+            <h2>Filters</h2>
+
+            <!-- Categories Filter -->
+            <div class="filter-group">
+                <h3>Category</h3>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="category" value="all" checked>
+                        <span>All</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="category" value="casual">
+                        <span>Casual</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="category" value="formal">
+                        <span>Formal</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Price Range Filter -->
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <div class="price-slider-container">
+                    <input type="range" id="price-range" min="0" max="1000" value="150" step="5">
+                    <div class="price-values">
+                        <span>₹0</span>
+                        <span>Max: <strong id="price-val">₹1000</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colors Filter -->
+            <div class="filter-group">
+                <h3>Colors</h3>
+                <div class="color-checkboxes">
+                    <label class="color-box-wrapper">
+                        <input type="checkbox" name="color" value="red">
+                        <span class="color-box" style="background-color: #ff4d4d;" title="Red"></span>
+                    </label>
+                    <label class="color-box-wrapper">
+                        <input type="checkbox" name="color" value="green">
+                        <span class="color-box" style="background-color: #43ff2a;" title="Green"></span>
+                    </label>
+                    <label class="color-box-wrapper">
+                        <input type="checkbox" name="color" value="white">
+                        <span class="color-box" style="background-color: #ffffff; border: 1px solid #ccc;"
+                            title="White"></span>
+                    </label>
+                    <label class="color-box-wrapper">
+                        <input type="checkbox" name="color" value="blue">
+                        <span class="color-box" style="background-color: #022c9e;" title="Blue"></span>
+                    </label>
+                </div>
+            </div>
+
+            <button id="reset-filters" class="btn-reset">Clear Filters</button>
+        </aside>
+
+        <!-- Shirt Collection List -->
+        <main class="products-section">
+            <div id="product-grid" class="product-grid">
+
+            </div>
+
+            <div id="no-products" class="no-products message hide">
+                No products match your criteria. Try adjusting your filters!
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="f1">
+            <h2>Nostra</h2>
+            <div class="container">
+                <p>Who we are</p>
+                <p>Terms & Conditions</p>
+                <p>Payments</p>
+                <p>Returns & Refunds Policy</p>
+                <p>Blog</p>
+            </div>
+        </div>
+        <div class="f2">
+            <h2>Help</h2>
+            <div class="container">
+                <p>Track your order</p>
+                <p>FAQ</p>
+                <p>Cancellations</p>
+                <p>Customer Care</p>
+                <p>Redeem My Coupon</p>
+            </div>
+        </div>
+        <div class="f3">
+            <h2>Shop by</h2>
+            <div class="container">
+                <p>All</p>
+                <p>Men</p>
+                <p>Women</p>
+                <p>Kids</p>
+                <p>Stores</p>
+            </div>
+        </div>
+        <div class="f4">
+            <h2>Follow us</h2>
+            <div class="container">
+                <p><i class="fa-brands fa-square-facebook"></i> Facebook</p>
+                <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+                <p><i class="fa-brands fa-x-twitter"></i> Twitter</p>
+                <p><i class="fa-brands fa-square-pinterest"></i> Pintrest</p>
+                <p>Copyright &copy; All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="collections.js"></script>
 </body>
 
 </html>
