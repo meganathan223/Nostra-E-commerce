@@ -386,8 +386,10 @@ h2 {
 .contact form input {
     border: none;
     border-bottom: solid 2px green;
+    color: white;
     height: 40px;
     background: transparent;
+    font-size: 18px;
 }
 
 .contact form input:focus {
