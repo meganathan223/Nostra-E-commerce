@@ -691,6 +691,10 @@ h2 {
     .search-wrapper input {
         width: 100%;
     }
+
+    .filter-sidebar {
+        position: relative;
+    }
 }
 
 
